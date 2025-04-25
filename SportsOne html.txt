@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports One - Football Jerseys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2a2a2a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .product-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 280px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        .form-container button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2a2a2a;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports One - Premium Football Jerseys</h1>
+    <p>Get Your Favorite Football Team's Jersey Today!</p>
+</header>
+
+<div class="product">
+    <!-- Argentina Messi Jersey -->
+    <div class="product-item">
+        <img src="https://i.imgur.com/yourimage1.jpg" alt="Argentina Messi Home Jersey 2022">
+        <h3>Argentina Messi Home Jersey 2022</h3>
+        <p>Price: ₹700</p>
+        <p>Sizes: M, L, XL</p>
+        <p>Description: Show your GOAT love with this premium Argentina jersey.</p>
+        <p>Order: Pay ₹700 to <strong>9841508863@fam</strong> and include product name and size in payment description.</p>
+    </div>
+
+    <!-- Portugal Ronaldo Jersey -->
+    <div class="product-item">
+        <img src="https://i.imgur.com/yourimage2.jpg" alt="Portugal Ronaldo Away Jersey 2022">
+        <h3>Portugal Ronaldo Away Jersey 2022</h3>
+        <p>Price: ₹700</p>
+        <p>Sizes: M, L, XL</p>
+        <p>Description: Rock CR7’s look in this clean Portugal kit.</p>
+        <p>Order: Pay ₹700 to <strong>9841508863@fam</strong> and include product name and size in payment description.</p>
+    </div>
+
+    <!-- Add other products similarly -->
+
+</div>
+
+<!-- Customer Order Form -->
+<div class="form-container">
+    <h2>Place Your Order</h2>
+    <form action="submit_order.php" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Shipping Address</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="product">Choose Product</label>
+        <select id="product" name="product" required>
+            <option value="Argentina Messi Home Jersey 2022">Argentina Messi Home Jersey 2022</option>
+            <option value="Portugal Ronaldo Away Jersey 2022">Portugal Ronaldo Away Jersey 2022</option>
+            <option value="Manchester City Home Jersey 24/25">Manchester City Home Jersey 24/25</option>
+            <option value="Real Madrid Home Jersey 24/25">Real Madrid Home Jersey 24/25</option>
+            <option value="Barcelona Home Jersey 24/25">Barcelona Home Jersey 24/25</option>
+            <option value="Arsenal Home Jersey 24/25">Arsenal Home Jersey 24/25</option>
+            <option value="Liverpool Home Jersey 24/25">Liverpool Home Jersey 24/25</option>
+        </select>
+
+        <label for="size">Choose Size</label>
+        <select id="size" name="size" required>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+        <button type="submit">Submit Order</button>
+    </form>
+    <p>After submitting the form, please pay ₹700 to <strong>9841508863@fam</strong> and mention the product name and size in the payment description.</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Sports One | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
